@@ -34,7 +34,7 @@ gulp.task("build", function() {
     //SCSS
     gulp.src(src.scss) // файл, который обрабатываем
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError)) // конвертируем sass в css
-        .pipe(concat("styles.scss"))
+        .pipe(concat("styles.css"))
         .pipe(autoprefixer({
             browsers: autoprefixBrowsers
         }))
